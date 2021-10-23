@@ -25,7 +25,7 @@ app.post('/watchlist', (request, response) => {
     .send({error: `Expected format: { movieId: <String> }. You’re missing an Id Property`})
     return 
   }
-  app.locals.watchList.push(movieId)
+  !app.locals.watchList.includes(movieId) && app.locals.watchList.push(movieId)
   const successfulResponse = 'Movie has been added to watchlist'
   response.status(201).json(successfulResponse)
 })
