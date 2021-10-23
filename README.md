@@ -8,8 +8,8 @@ Use the command `node server.js` to begin the API server.
 
 | Method | Endpoint | Request Body | Sample Response |
 --- | --- | --- | ---
-`GET` | `'/watchlist'` | n/a | `[{movieId: "974478"}, ...]`
-`POST` | `/watchlist'` | movieId: "974478" | `[{movieId: "974478"}, ...]`
+`GET` | `'/watchlist'` | `n/a` | `[{movieId: "974478"}, ...]`
+`POST` | `/watchlist'` | `movieId: "974478"` | `[{movieId: "974478"}, ...]`
 
 
 ### Notes
